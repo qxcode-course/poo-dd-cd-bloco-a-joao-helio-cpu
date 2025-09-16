@@ -11,7 +11,7 @@ matricula: "Digite sua matrícula aqui por obséquio"
 pipx install tko
 
 # Instalando algumas extensões úteis para todas as linguagens
-code --install-extension usernamehw.errorlens
+
 code --install-extension jeff-hughes.open-terminal-here
 
 # Abra o arquivo de configurações do vscode para o projeto e adicione o seguinte parâmetro
