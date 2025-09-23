@@ -27,14 +27,15 @@ class T:
             return self.wetness == 0
 
     def __str__(self):
-        return f"Toalha {self.color} de tamanho {self.size} com umidade atual {self.wetness}"
+        return f"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}"
     
 
 def main():
     toalha = T("", "")
     while True:
-        line:str = input()
+        line = input()
         args = line.split(" ")
+        print('$' + line)
 
         if args[0] == "end":
             break
@@ -44,15 +45,18 @@ def main():
             size = args[2]
             toalha = T(color, size)
 
-        elif args[0] == "ver":
+        elif args[0] == "mostrar":
             print(toalha)
 
         elif args[0] == "dry":
             amount = int(args[1])
             toalha.dry(amount)
 
-        elif args[0] == "secar":
-            toalha.wringOut()
+        elif args[0] == "seca":
+            if toalha.isDry()  :
+                print("sim")
+            else:
+                print("nao")    
 
         else:
             print("Comando inválido")
