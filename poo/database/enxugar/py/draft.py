@@ -63,9 +63,6 @@ def main():
 
         elif args[0] == "torcer":
             toalha.wringOut()
-
-        
-
         else:
             print("Comando inválido")
 
