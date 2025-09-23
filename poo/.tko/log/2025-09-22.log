@@ -1,0 +1,36 @@
+2025-09-22 18:33:21, MOVE, v:1, k:toalha, mode:PICK
+2025-09-22 18:33:22, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:33
+2025-09-22 18:33:24, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-22 18:33:26, MOVE, v:1, k:toalha, mode:BACK
+2025-09-22 18:33:33, MOVE, v:1, k:toalha, mode:PICK
+2025-09-22 18:33:33, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-22 18:42:13, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:35
+2025-09-22 18:50:42, EXEC, v:1, k:toalha, mode:LOCK, rate:100, size:33
+2025-09-22 18:51:03, EXEC, v:1, k:toalha, mode:LOCK, rate:100, size:33
+2025-09-22 18:51:04, EXEC, v:1, k:toalha, mode:LOCK, rate:100
+2025-09-22 18:51:15, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:33
+2025-09-22 18:52:25, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:33
+2025-09-22 18:54:23, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:34
+2025-09-22 18:56:08, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:34
+2025-09-22 18:58:18, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:35
+2025-09-22 18:58:47, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:35
+2025-09-22 18:59:47, MOVE, v:1, k:toalha, mode:PICK
+2025-09-22 19:05:12, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:35
+2025-09-22 19:08:54, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:35
+2025-09-22 19:21:22, MOVE, v:1, k:toalha, mode:BACK
+2025-09-22 19:49:03, MOVE, v:1, k:toalha, mode:PICK
+2025-09-22 19:49:05, EXEC, v:1, k:toalha, mode:FREE, size:46
+2025-09-22 19:50:54, EXEC, v:1, k:toalha, mode:LOCK, rate:100, size:48
+2025-09-22 19:50:56, EXEC, v:1, k:toalha, mode:FREE
+2025-09-22 19:51:06, EXEC, v:1, k:toalha, mode:FREE
+2025-09-22 19:52:08, EXEC, v:1, k:toalha, mode:FREE
+2025-09-22 19:55:04, EXEC, v:1, k:toalha, mode:FREE, size:51
+2025-09-22 19:56:36, MOVE, v:1, k:toalha, mode:BACK
+2025-09-22 19:56:46, MOVE, v:1, k:toalha, mode:PICK
+2025-09-22 19:56:47, EXEC, v:1, k:toalha, mode:LOCK, rate:100
+2025-09-22 19:56:50, EXEC, v:1, k:toalha, mode:FREE
+2025-09-22 20:02:17, MOVE, v:1, k:toalha, mode:PICK
+2025-09-22 20:02:18, EXEC, v:1, k:toalha, mode:FREE, size:55
+2025-09-22 20:13:25, MOVE, v:1, k:toalha, mode:BACK
+2025-09-22 20:13:25, MOVE, v:1, k:toalha, mode:PICK
+2025-09-22 20:13:26, MOVE, v:1, k:toalha, mode:BACK
