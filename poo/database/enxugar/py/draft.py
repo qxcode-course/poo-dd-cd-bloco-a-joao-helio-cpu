@@ -15,8 +15,8 @@ class T:
             
     def dry(self, amount:int):
         self.wetness += amount
-        if self.wetness > self.getMaxWetness():
-            print("A toalha está encharcada!")
+        if self.wetness >= self.getMaxWetness():
+            print("toalha encharcada")
             self.wetness = self.getMaxWetness()
             
 
@@ -48,15 +48,23 @@ def main():
         elif args[0] == "mostrar":
             print(toalha)
 
-        elif args[0] == "dry":
+        elif args[0] == "enxugar": 
             amount = int(args[1])
             toalha.dry(amount)
+            if toalha.wetness > toalha.getMaxWetness():   
+                print("toalha encharcada")
+                toalha.wetness = toalha.getMaxWetness()
 
         elif args[0] == "seca":
             if toalha.isDry()  :
                 print("sim")
             else:
-                print("nao")    
+                print("nao")  
+
+        elif args[0] == "torcer":
+            toalha.wringOut()
+
+        
 
         else:
             print("Comando inválido")

@@ -47,11 +47,11 @@ def main():
         elif args[0] == "ver":
             print(toalha)
 
-        elif args[0] == "dry":
+        elif args[0] == "enxugar":
             amount = int(args[1])
             toalha.dry(amount)
 
-        elif args[0] == "secar":
+        elif args[0] == "seca":
             toalha.wringOut()
 
         else:
