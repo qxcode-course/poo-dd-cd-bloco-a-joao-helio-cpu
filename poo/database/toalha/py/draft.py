@@ -25,6 +25,7 @@ class T:
     def isDry(self) -> bool:
         return self.wetness == 0
     # so altereção pra teste
+    e = 10
 
     def __str__(self):
         return f"Toalha {self.color} de tamanho {self.size} com umidade atual {self.wetness}"
