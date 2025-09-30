@@ -1,0 +1,304 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-30_14-15-08",
+            "content": "@@ -583,16 +583,53 @@\n         \n-%0A\n+calc.battery= calc.batMax%0A            \n %0Amain()\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-30_14-15-42",
+            "content": "@@ -293,17 +293,17 @@\n alc(0,0,\n-0\n+5\n )%0A    wh\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-30_14-16-19",
+            "content": "@@ -53,19 +53,30 @@\n tery:int\n+,batMax:int\n ):%0A\n-\n         \n@@ -135,16 +135,35 @@\n         \n+self.batMax= batMax\n %0A%0A    de\n@@ -257,152 +257,8 @@\n y%7D%22%0A\n-    %0A    def batMax(self,amount:int) -%3ENone:%0A        self.battery += amount%0A        if self.battery %3E amount:%0A            self.battery = amount%0A\n     \n@@ -274,16 +274,16 @@\n main():%0A\n-\n     calc\n@@ -292,16 +292,18 @@\n Calc(0,0\n+,0\n )%0A    wh\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-30_14-18-36",
+            "content": "@@ -255,24 +255,31 @@\n ,amount:int)\n+ -%3ENone\n :%0A        se\n@@ -375,22 +375,16 @@\n         \n-return\n %0Adef mai\n@@ -663,17 +663,30 @@\n alc.\n-batMax= (\n+display= float(args%5B1%5D\n )%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-30_14-20-04",
+            "content": "@@ -379,161 +379,8 @@\n urn%0A\n-    %0A    def charge(self,amount:int):%0A        self.battery += amount%0A        if self.battery %3E amount:%0A            self.battery = amount%0A        return%0A%0A\n def \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-30_14-21-04",
+            "content": "@@ -274,22 +274,22 @@\n    self.\n-displa\n+batter\n y += amo\n@@ -308,22 +308,22 @@\n if self.\n-displa\n+batter\n y %3E amou\n@@ -343,22 +343,22 @@\n    self.\n-displa\n+batter\n y = amou\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-30_14-21-51",
+            "content": "@@ -762,32 +762,34 @@\n (calc)%0A%0A        \n+el\n if args%5B0%5D == %22i\n@@ -825,79 +825,8 @@\n = ()\n-%0A%0A        if args%5B0%5D == %22charge%22:%0A            calc.charge(int(args%5B1%5D))\n %0A   \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-30_14-22-18",
+            "content": "@@ -520,16 +520,22 @@\n         \n+return\n %0A%0Adef ma\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-23-31",
+            "content": "@@ -495,33 +495,32 @@\n    self.battery \n-+\n = amount%0A       \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-23-42",
+            "content": "@@ -503,16 +503,17 @@\n battery \n++\n = amount\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-24-00",
+            "content": "@@ -469,17 +469,16 @@\n attery %3E\n-=\n  amount:\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-24-09",
+            "content": "@@ -496,33 +496,32 @@\n    self.battery \n-+\n = amount%0A       \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-24-15",
+            "content": "@@ -469,16 +469,17 @@\n attery %3E\n+=\n  amount:\n@@ -504,16 +504,17 @@\n battery \n++\n = amount\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-24-37",
+            "content": "@@ -263,14 +263,8 @@\n int)\n--%3ENone\n :%0A  \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-25-36",
+            "content": "@@ -423,24 +423,46 @@\n t):%0A        \n+self.battery += amount\n %0A        if \n@@ -501,33 +501,32 @@\n    self.battery \n-+\n = amount%0A       \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-27-42",
+            "content": "@@ -487,16 +487,17 @@\n battery \n++\n = amount\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-27-55",
+            "content": "@@ -431,30 +431,8 @@\n     \n-self.battery += amount\n %0A   \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-28-01",
+            "content": "@@ -57,20 +57,8 @@\n :int\n-, batMax:int\n ):%0A \n@@ -128,39 +128,8 @@\n     \n-self.batMax:int = batMax       \n %0A%0A  \n@@ -239,17 +239,16 @@\n  def bat\n-t\n Max(self\n@@ -259,17 +259,16 @@\n unt:int)\n- \n -%3ENone:%0A\n@@ -280,22 +280,23 @@\n    self.\n-batMax\n+display\n  += amou\n@@ -318,74 +318,74 @@\n elf.\n-battery %3E self.batMax:%0A            self.battery = self.batMax%0A    \n+display %3E amount:%0A            self.display = amount%0A        return\n %0A   \n@@ -540,39 +540,32 @@\n main():%0A    calc\n-uladora\n = Calc(0,0,0)%0A  \n@@ -558,18 +558,16 @@\n Calc(0,0\n-,0\n )%0A    wh\n@@ -759,23 +759,16 @@\n int(calc\n-uladora\n )%0A%0A     \n@@ -812,38 +812,18 @@\n calc\n-uladora= Calc(0,0,int(args%5B1%5D)\n+.batMax= (\n )%0A%0A \n@@ -873,15 +873,8 @@\n calc\n-uladora\n .cha\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-33-56",
+            "content": "@@ -424,27 +424,8 @@\n Max%0A\n-            return%0A\n     \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-30_14-34-22",
+            "content": "@@ -535,35 +535,30 @@\n f.battery %3E \n-self.batMax\n+amount\n :%0A          \n@@ -570,35 +570,30 @@\n f.battery = \n-self.batMax\n+amount\n %0A        %0A%0Ad\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-09-30_14-35-27",
+            "content": "@@ -595,206 +595,8 @@\n Max%0A\n-    %0A    def sum(self,amount:int) -%3ENone:%0A        if self.battery == 0:%0A            print( f%22fail: bateria insuficiente%22)%0A            return%0A        self.display += amount%0A        self.battery -= 1%0A\n     \n@@ -1010,80 +1010,8 @@\n 1%5D))\n-%0A%0A        if args%5B0%5D == %22sum%22:%0A            calculadora.sum(int(args%5B1%5D))\n %0A   \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-09-30_14-38-00",
+            "content": "@@ -755,32 +755,58 @@\n splay += amount%0A\n+        self.battery -= 1%0A\n         %0A%0Adef ma\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-09-30_14-38-36",
+            "content": "@@ -618,60 +618,26 @@\n lf,a\n-:float,b:float) -%3ENone:%0A        self.display = a + b\n+mount:int) -%3ENone:\n %0A   \n@@ -736,24 +736,46 @@\n urn%0A        \n+self.display += amount\n %0A        %0A%0Ad\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-09-30_14-41-47",
+            "content": "@@ -1249,20 +1249,18 @@\n ora.sum(\n-floa\n+in\n t(args%5B1\n@@ -1265,23 +1265,8 @@\n %5B1%5D)\n-,float(args%5B2%5D)\n )%0A  \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-09-30_14-42-14",
+            "content": "@@ -770,34 +770,8 @@\n urn%0A\n-        self.battery -= 1%0A\n     \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-09-30_14-45-42",
+            "content": "@@ -591,25 +591,16 @@\n .batMax%0A\n-        %0A\n     %0A   \n@@ -665,18 +665,13 @@\n y = \n-abs(\n a + b\n-)\n %0A   \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-09-30_14-48-17",
+            "content": "@@ -674,13 +674,18 @@\n y = \n+abs(\n a + b\n+)\n %0A   \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-09-30_14-50-22",
+            "content": "@@ -768,29 +768,22 @@\n         \n-%0A            \n+return\n %0A       \n@@ -818,25 +818,16 @@\n         \n-%0A        \n %0A%0Adef ma\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-09-30_14-52-58",
+            "content": "@@ -764,30 +764,24 @@\n             \n-return\n %0A           \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-55-17",
+            "content": "@@ -639,32 +639,61 @@\n :float) -%3ENone:%0A\n+        self.display = a + b%0A\n         if self.\n@@ -787,25 +787,12 @@\n     \n-self.battery -= 1\n+    \n %0A   \n@@ -797,39 +797,36 @@\n        self.\n-displa\n+batter\n y \n+-\n = \n-a + b\n+1\n %0A        %0A  \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-55-54",
+            "content": "@@ -818,322 +818,12 @@\n     \n-def div(self,den:float,num:float) -%3ENone:%0A        if self.battery == 0:%0A            print( f%22fail: bateria insuficiente%22)%0A            return%0A        self.battery -= 1%0A        if num == 0:%0A            print( f%22fail: divisao por zero%22)%0A            self.display = 0%0A            return%0A        self.display = den / num\n+    \n %0A   \n@@ -1327,94 +1327,8 @@\n 2%5D))\n-%0A%0A        def args%5B0%5D == %22div%22:%0A        calculadora.div(float(args%5B1%5D),float(args%5B2%5D))\n %0A   \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-30_14-58-13",
+            "content": "@@ -1639,24 +1639,100 @@\n ))%0A%0A        \n+def args%5B0%5D == %22div%22:%0A        calculadora.div(float(args%5B1%5D),float(args%5B2%5D))\n %0A           \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-09-30_14-58-31",
+            "content": "@@ -995,14 +995,8 @@\n   if\n- den /\n  num\n@@ -1088,32 +1088,65 @@\n          return%0A\n+        self.display = den / num%0A\n         %0A%0Adef ma\n@@ -1639,97 +1639,8 @@\n ))%0A%0A\n-        if args%5B0%5D == %22div%22:%0A            calculadora.div(float(args%5B1%5D),float(args%5B2%5D))%0A%0A\n     \n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-09-30_15-00-14",
+            "content": "@@ -1106,41 +1106,8 @@\n urn%0A\n-        self.display = den / num%0A\n     \n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-09-30_15-00-44",
+            "content": "@@ -1012,45 +1012,8 @@\n  0:%0A\n-            self.display = den / num%0A\n     \n@@ -1102,32 +1102,56 @@\n  return%0A        \n+self.display = den / num\n %0A        %0A%0Adef m\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-09-30_15-01-03",
+            "content": "@@ -1012,32 +1012,56 @@\n  0:%0A            \n+self.display = den / num\n %0A            pri\n@@ -1095,45 +1095,8 @@\n o%22)%0A\n-            self.display = den / num%0A\n     \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_15-01-15",
+            "content": "@@ -1108,32 +1108,48 @@\n num%0A            \n+self.display = 0\n %0A            ret\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-01-32",
+            "content": "@@ -1004,24 +1004,37 @@\n / num == 0:%0A\n+            %0A\n             \n@@ -1083,26 +1083,8 @@\n     \n-return%0A        if \n self\n@@ -1093,17 +1093,16 @@\n isplay =\n-=\n  den / n\n@@ -1103,17 +1103,16 @@\n en / num\n-:\n %0A       \n@@ -1120,32 +1120,8 @@\n     \n-self.display = den / num\n %0A   \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-03-14",
+            "content": "@@ -980,26 +980,16 @@\n ery -= 1\n-%0A%0A        \n %0A       \n@@ -1065,32 +1065,126 @@\n          return%0A\n+        if self.display == den / num:%0A            self.display = den / num%0A            return%0A\n         %0A       \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-03-50",
+            "content": "@@ -977,32 +977,33 @@\n attery -= 1%0A\n+%0A\n         \n self.display\n@@ -994,32 +994,100 @@\n     \n-self.display = den / num\n+%0A        if den / num == 0:%0A            print( f%22fail: divisao por zero%22)%0A            return\n %0A   \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_15-04-47",
+            "content": "@@ -1018,131 +1018,8 @@\n num%0A\n-        if num and den == 0:%0A            print( f%22fail: divisao por zero%22)%0A            self.display = 0%0A            return%0A\n     \n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-09-30_15-06-18",
+            "content": "@@ -955,16 +955,41 @@\n  return%0A\n+        self.battery -= 1\n %0A       \n@@ -989,18 +989,49 @@\n         \n+s\n el\n+f.display = den / num%0A        \n if num a\n@@ -1141,67 +1141,8 @@\n urn%0A\n-        self.battery -= 1%0A        self.display = den / num%0A\n     \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_15-07-52",
+            "content": "@@ -1033,16 +1033,45 @@\n  zero%22)%0A\n+            self.display = 0%0A\n         \n@@ -1134,17 +1134,17 @@\n y = \n-num / den\n+den / num\n %0A   \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-09-18",
+            "content": "@@ -1105,17 +1105,17 @@\n y = \n-den / num\n+num / den\n %0A   \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_15-09-41",
+            "content": "@@ -1105,17 +1105,17 @@\n y = \n-num / den\n+den / num\n %0A   \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_15-09-56",
+            "content": "@@ -1105,11 +1105,8 @@\n y = \n-4*(\n num \n@@ -1110,17 +1110,16 @@\n um / den\n-)\n %0A       \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_15-10-42",
+            "content": "@@ -1052,25 +1052,16 @@\n  return%0A\n-        %0A\n         \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_15-12-10",
+            "content": "@@ -1110,16 +1110,18 @@\n splay = \n+4*\n (num / d\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-13-01",
+            "content": "@@ -1115,17 +1115,17 @@\n  = (\n-den / num\n+num / den\n )%0A  \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-13-09",
+            "content": "@@ -1110,16 +1110,17 @@\n splay = \n+(\n den / nu\n@@ -1120,16 +1120,17 @@\n en / num\n+)\n %0A       \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-13-18",
+            "content": "@@ -969,16 +969,24 @@\n    elif \n+num and \n den == 0\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-14-46",
+            "content": "@@ -831,21 +831,21 @@\n elf,\n-num\n+den\n :float,\n-den\n+num\n :flo\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-15-12",
+            "content": "@@ -1106,17 +1106,17 @@\n y = \n-num / den\n+den / num\n %0A   \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-15-28",
+            "content": "@@ -958,38 +958,8 @@\n turn\n-%0A            self.battery -= 1\n %0A%0A  \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_15-16-02",
+            "content": "@@ -955,32 +955,36 @@\n  return%0A        \n+    \n self.battery -= \n@@ -984,20 +984,16 @@\n ery -= 1\n-    \n %0A%0A      \n@@ -998,14 +998,16 @@\n     \n+el\n if \n-num\n+den\n  == \n@@ -1083,32 +1083,49 @@\n        %0A        \n+self.battery -= 1\n %0A        self.di\n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-30_15-16-34",
+            "content": "@@ -967,34 +967,8 @@\n     \n-%0A            %0A            \n self\n@@ -972,32 +972,37 @@\n elf.battery -= 1\n+    %0A\n %0A        elif de\n@@ -998,16 +998,14 @@\n     \n-el\n if \n-den\n+num\n  == \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-30_15-17-37",
+            "content": "@@ -1112,37 +1112,16 @@\n         \n-    self.battery -= 1\n %0A       \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-09-30_15-17-52",
+            "content": "@@ -955,32 +955,58 @@\n  return%0A        \n+%0A            %0A            \n self.battery -= \n@@ -1015,25 +1015,18 @@\n         \n-%0A        \n+el\n if den =\n@@ -1096,32 +1096,36 @@\n return%0A        %0A\n+    \n         self.bat\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-09-30_15-18-28",
+            "content": "@@ -981,16 +981,24 @@\n ry -= 1%0A\n+        \n %0A       \n@@ -1085,32 +1085,49 @@\n        %0A        \n+self.battery -= 1\n %0A        self.di\n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-30_15-18-40",
+            "content": "class Calc:\n    def __init__(self,display:float, battery:int, batMax:int):\n        self.display= display\n        self.battery= battery\n        self.batMax:int = batMax       \n\n    def __str__(self) :\n        return f\"display = {self.display:.2f}, battery = {self.battery}\"\n    \n    def battMax(self,amount:int) ->None:\n        self.batMax += amount\n        if self.battery > self.batMax:\n            self.battery = self.batMax\n            return\n    \n    \n    def charge(self,amount:int):\n        self.battery += amount\n        if self.battery > self.batMax:\n            self.battery = self.batMax\n        \n    \n    def sum(self,a:float,b:float) ->None:\n        if self.battery == 0:\n            print( f\"fail: bateria insuficiente\")\n            return\n        self.battery -= 1\n        self.display = a + b\n        \n    def div(self,num:float,den:float) ->None:\n        if self.battery == 0:\n            print( f\"fail: bateria insuficiente\")\n            return\n        self.battery -= 1\n\n        if den == 0:\n            print( f\"fail: divisao por zero\")\n            return\n        \n        \n        self.display = num / den\n        \n        \n\ndef main():\n    calculadora= Calc(0,0,0)\n    while True:\n        line  = input()\n        args = line.split (\" \")\n        print(\"$\" + line)\n\n        if args[0] == \"end\":\n            break\n\n        if args[0] == \"show\":\n            print(calculadora)\n\n        if args[0] == \"init\":\n            calculadora= Calc(0,0,int(args[1]))\n\n        if args[0] == \"charge\":\n            calculadora.charge(int(args[1]))\n\n        if args[0] == \"sum\":\n            calculadora.sum(float(args[1]),float(args[2]))\n\n        if args[0] == \"div\":\n            calculadora.div(float(args[1]),float(args[2]))\n\n        \n            \n\nmain()",
+            "lines": "73"
+        }
+    ]
+}
