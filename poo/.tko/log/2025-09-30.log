@@ -120,3 +120,4 @@
 2025-09-30 15:18:29, EXEC, v:1, k:calculadora, mode:FULL, rate:72, size:73
 2025-09-30 15:18:40, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:73
 2025-09-30 15:18:44, EXEC, v:1, k:calculadora, mode:FULL, rate:100
+2025-09-30 15:18:55, MOVE, v:1, k:calculadora, mode:BACK
