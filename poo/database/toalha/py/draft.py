@@ -11,24 +11,25 @@ class T:
             return 20
         elif self.size == "G":
             return 30
-        return 0 # se não for P, M ou G
-            
-    def dry(self, amount:int):
+        return 0  # se não for P, M ou G
+
+    def dry(self, amount: int):
         self.wetness += amount
         if self.wetness > self.getMaxWetness():
             print("A toalha está encharcada!")
             self.wetness = self.getMaxWetness()
-            
 
     def wringOut(self):
         self.wetness = 0
 
-    def isDry(self) -> bool :
-            return self.wetness == 0
+    def isDry(self) -> bool:
+        return self.wetness == 0
+    # so altereção pra teste
+    e = 10
 
     def __str__(self):
         return f"Toalha {self.color} de tamanho {self.size} com umidade atual {self.wetness}"
-    
+
 
 def main():
     toalha = T("", "")
@@ -56,5 +57,6 @@ def main():
 
         else:
             print("Comando inválido")
+
 
 main()
